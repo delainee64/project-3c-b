@@ -10,15 +10,13 @@ user = int(input("Enter the integer for the player to guess."))
 guess = int(input("Enter your guess."))
 num = 0
 
-while (True):               # while loop will continue until the guess is correct.
-    num = num + 1           # num will count the number of attempts.
-    if (guess < user):
+while True:  # while loop will continue until the guess is correct.
+    num = num + 1  # num will count the number of attempts.
+    if guess < user:
         guess = int(input("Too low - try again:"))
-        continue
-    elif (guess > user):
+    elif guess > user:
         guess = int(input('Too high - try again:'))
-        continue
     else:
-        break               # break will exit the cycle
+        break  # break will exit the cycle
 
 print('You guessed it in', num, 'tries.')
