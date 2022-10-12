@@ -14,8 +14,10 @@ while (True):               # while loop will continue until the guess is correc
     num = num + 1           # num will count the number of attempts.
     if (guess < user):
         guess = int(input("Too low - try again:"))
+        continue
     elif (guess > user):
         guess = int(input('Too high - try again:'))
+        continue
     else:
         break               # break will exit the cycle
 
